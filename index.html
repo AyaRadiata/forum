@@ -12,14 +12,14 @@
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Great+Vibes&family=Permanent+Marker&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     </style>
 </head>
-<body id="body" data-lang="eng">
+<body id="body" data-lang="eng" data-p1vid-open="false">
     <div id="caption">
         <div class="logo_area">
             Logo
         </div>
         <nav>
             <a href="#page1">About</a>
-            <a href="#">Schedule</a>
+            <a href="#page2">Schedule</a>
             <a href="#">Speakers</a>
             <a href="#">Registration</a>
         </nav>
@@ -37,14 +37,21 @@
     <div id="menu">
 
     </div>
+    <div id="p1vidWatch">
+        <div id="p1vidClose"><ion-icon name="close"></ion-icon></div>
+        <video src="media/vid.mp4" controls></video>
+    </div>
     <div id="header" class="page">
         <div id="header_content">
             <div class="left-f-block">
                 <div id="header_title">
-                    Developing <span>AI skills</span> for <span>future</span>
+                    Developing <span>AI skills:</span> <br> preparing students for the <span>professions</span> of the <span>future</span>
+                </div>
+                <div class="header_subtitle">
+                    International Conference
                 </div>
             </div>
-            <div class="left-r-block">
+            <div class="right-f-block">
                 <div id="header_time" class="lbb">
                     <!-- <div class="cursor_light_box">
                         <div class="cursor_light"></div>
@@ -59,29 +66,32 @@
                         00 : 00 : 00 : 00
                     </div>
                 </div>
-                <div id="header_time_after">
+                <!-- <div id="header_time_after">
                     <a href="#">
                         <ion-icon name="logo-instagram"></ion-icon>
                     </a>
-                </div>
+                </div> -->
             </div>
         </div>
         <video src="media/vid.mp4" loop muted autoplay></video>
     </div>
     <div class="page" id="page1">
+        <div id="p1h_dec">
+            
+        </div>
         <div id="p1_title_text_box">
             <span>Learn More About AI</span>
             <span>With Professional Speakers</span>
         </div>
         <div id="p1_c_wrapper">
-            <div class="p1_kw">Hello</div>
+            <div class="p1_kw">Welcome</div>
             <div class="p1_kw">Artificial Inteligence</div>
             <div class="p1_kw">Speakers</div>
             <div class="p1_kw">Future</div>
             <div class="p1_kw">Development</div>
         </div>
         <div id="p1_video_box">
-            <video src="media/vid.mp4" controls></video>
+            <video id="p1Vid" src="media/vid.mp4" autoplay loop muted></video>
         </div>
         <div class="p1_dec">
             <div class="p1dec_row p1dec_ur">
@@ -103,6 +113,9 @@
         </div>
     </div>
     <div class="page" id="page2">
+        <div class="p2_title">
+            <span>Events</span> Schedule
+        </div>
         <div class="table">
             <div class="t_row t_r_head">
                 <div class="t_slot">

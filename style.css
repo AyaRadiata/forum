@@ -16,7 +16,7 @@
 
     --cap-h: 10vh;
 
-    --off: 10vw;
+    --off: 7vw;
 
     --b-r: 10px;
 
@@ -71,12 +71,14 @@ body{
     height: 100vh;
 }
 
-.left-f-block , .left-r-block{
+.left-f-block , .right-f-block{
     display: flex;
     position: relative;
     width: 50%;
     height: 100%;
 }
+
+/* CAPTION */
 
 #caption{
 
@@ -222,6 +224,7 @@ body[data-lang="kz"] #lang_switch > span:nth-of-type(1){
     border-radius: var(--b-r);
 }
 
+/* HEADER */
 
 #header{
     display: flex;
@@ -229,6 +232,21 @@ body[data-lang="kz"] #lang_switch > span:nth-of-type(1){
 
     justify-content: center;
     align-items: center;
+    background: black;
+}
+
+#header::after{
+    position: absolute;
+    content: "";
+    display: flex;
+    width: 100vw;
+    height: 5vh;
+    background: white;
+    top: 10vh;
+    opacity: 0.9;
+
+    rotate: 2deg;
+    
 }
 
 #header > video{
@@ -238,6 +256,8 @@ body[data-lang="kz"] #lang_switch > span:nth-of-type(1){
     position: absolute;
     object-fit: cover;
     filter: brightness(80%);
+
+    display: none;
 }
 
 #header_content{
@@ -254,12 +274,18 @@ body[data-lang="kz"] #lang_switch > span:nth-of-type(1){
 }
 
 #header_title{
-    position: absolute;
-    font-size: 5em;
+    position: relative;
+    font-size: 3em;
     color: white;
-    bottom: 0;
-    text-transform: uppercase;
-    width: 40vw;
+    width: 100%;
+    font-weight: 300;
+}
+
+.header_subtitle{
+    color: grey;
+    font-size: 2em;
+    font-weight: 200;
+    font-style: italic;
 }
 
 #header_title span{
@@ -274,7 +300,7 @@ body[data-lang="kz"] #lang_switch > span:nth-of-type(1){
     position: relative;
     bottom: 0;
     /* right: calc(var(--off)*1.5); */
-    width: 20vw;
+    width: 30vw;
     height: 40vh;
     color: white;
     /* backdrop-filter: blur(10px);
@@ -291,10 +317,15 @@ body[data-lang="kz"] #lang_switch > span:nth-of-type(1){
     z-index: 10;
 }
 
-#header_content > .left-r-block{
-    justify-content: end;
-    align-items: end;
+#header_content > .left-f-block{
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
     gap: var(--index);
+}
+#header_content > .right-f-block{
+    justify-content: end;
+    align-items: center;
 }
 
 
@@ -305,6 +336,34 @@ body[data-lang="kz"] #lang_switch > span:nth-of-type(1){
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+}
+
+#header_time::after{
+    width: 50%;
+    height: 30%;
+    content: '';
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+}
+
+#header_time::before{
+    width: 50%;
+    height: 30%;
+    content: '';
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
 }
 
 .time_title{
@@ -333,33 +392,6 @@ body[data-lang="kz"] #lang_switch > span:nth-of-type(1){
     font-size: 2em;
 }
 
-#header_time_after{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    bottom: 0;
-    /* right: calc(var(--off)/2); */
-    width: 5vw;
-    height: 40vh;
-    color: white;
-    /* backdrop-filter: blur(10px);
-    background: rgba(250, 250, 250, 0.1); */
-    background: black;
-    padding: var(--index);
-
-}
-
-#header_time_after > a{
-    width: 100%;
-    aspect-ratio: 1/1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-
-    color: white;
-}
-
 /* PAGE 1 */
 
 #page1{
@@ -370,6 +402,38 @@ body[data-lang="kz"] #lang_switch > span:nth-of-type(1){
     
 
     color: white;
+}
+
+#p1h_dec{
+    position: absolute;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 50vh;
+    top: 75vh;
+    gap: 5vh;
+}
+
+#p1h_dec::after,#p1h_dec::before{
+    content: "";
+    position: relative;
+    display: flex;
+    background: white;
+    align-self: center;
+    width: 150%;
+    opacity: 0.9;
+
+    rotate: 2deg;
+}
+#p1h_dec::before{
+    height: 10vh;
+    top: 0;
+}
+#p1h_dec::after{
+    height: 20vh;
+    bottom: 0;
 }
 
 #p1_title_text_box{
@@ -463,8 +527,48 @@ body[data-lang="kz"] #lang_switch > span:nth-of-type(1){
     align-items: center;
 }
 
-#p1_video_box > video{
-    width: 70%;
+#p1Vid{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+body[data-p1vid-open="true"] #p1vidWatch{
+    display: flex;
+}
+
+#p1vidWatch{
+    width: 100vw;
+    height: 100vh;
+    z-index: 55555;
+    background: rgba(0, 0, 0, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+
+    display: none;
+}
+
+#p1vidClose{
+    display: flex;
+    position: absolute;
+    right: var(--off);
+    top: var(--off);
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: white;
+    cursor: pointer;
+}
+
+#p1vidWatch > video{
+    position: relative;
+    height: 70%;
 }
 
 .p1_dec{
@@ -538,7 +642,18 @@ body[data-lang="kz"] #lang_switch > span:nth-of-type(1){
     height: 500vh;
     background: black;
     position: relative;
-    padding: 30px var(--off);
+    padding: var(--off) var(--off);
+}
+
+.p2_title{
+    width: 100%;
+    color: white;
+    font-size: 3em;
+    height: 20vh;
+    text-transform: uppercase;
+}
+.p2_title > span{
+    color: var(--dec-col);
 }
 
 .table{
@@ -557,9 +672,6 @@ body[data-lang="kz"] #lang_switch > span:nth-of-type(1){
     height: max-content;
     margin-bottom: 50px;
     padding-block: 20px;
-
-
-    /* border: 2px solid red; */
 }
 
 .t_row > .t_slot{
@@ -568,9 +680,7 @@ body[data-lang="kz"] #lang_switch > span:nth-of-type(1){
     flex-direction: column;
     height: calc(100%);
     padding-right: 20px;
-
-    
-    /* border: 2px solid green; */
+    padding-left: 10px;
 }
 
 .t_r_head{
@@ -585,7 +695,11 @@ body[data-lang="kz"] #lang_switch > span:nth-of-type(1){
     background: rgb(22, 22, 22);
 }
 
-/* SECTION 1 */
+.t_slot > a{
+    color: yellow;
+}
+
+/* SECTIONS */
 
 .s_body{
     position: relative;

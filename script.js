@@ -75,49 +75,12 @@ menuBtn.addEventListener("click", ()=>{
     console.log("a")
 });
 
+const p1Vid = document.getElementById('p1Vid');
+const p1vidClose = document.getElementById('p1vidClose');
 
-
-// var ww = window.innerWidth
-// var wh = window.innerHeight
-
-// const lbbs = document.getElementsByClassName('lbb');
-
-// var lbw = 10
-
-// for (let index = 0; index < lbbs.length; index++) {
-//     const lbb = lbbs[index];
-//     var lbbRect = lbb.getBoundingClientRect()
-
-//     console.log(lbbRect.right)
-    
-//     body.innerHTML += `
-//         <div class="cursor_light_box" style="width: ${lbb.offsetWidth + lbw}px; height: ${lbb.offsetHeight + lbw}px; right: ${ww -lbbRect.right - lbw*1.5}px; top: ${lbbRect.top - lbw/2}px;">
-//             <div class="cursor_light"></div>
-//         </div>
-//     `
-// }
-
-// const cursorLights = document.getElementsByClassName('cursor_light');
-
-// var clBoundsArr = []
-
-// for (let index = 0; index < cursorLights.length; index++) {
-//     const cl = cursorLights[index];
-//     var clrect = cl.getBoundingClientRect();
-//     clBoundsArr.push([clrect.left, clrect.top, cl.offsetWidth, cl.offsetHeight])
-// }
-
-// window.addEventListener('mousemove', (e)=>{
-//     cX = e.clientX
-//     cY = e.pageY
-
-//     for (let index = 0; index < cursorLights.length; index++) {
-//         const cl = cursorLights[index];
-//         clX = cX - clBoundsArr[index][0] - clBoundsArr[index][2]/2;
-//         clY = cY - clBoundsArr[index][1] - clBoundsArr[index][3]/2;
-
-//         cl.style.transform = `translate(${clX}px,${clY}px)`
-//     }
-
-    
-// })
+p1Vid.addEventListener('click', ()=>{
+    body.dataset.p1vidOpen = "true"
+})
+p1vidClose.addEventListener('click', ()=>{
+    body.dataset.p1vidOpen = "false"
+})

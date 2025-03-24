@@ -194,6 +194,7 @@ body{
     background: black;
     width: 100vw;
     height: 70vh;
+    top: 0;
     position: fixed;
     z-index: 554;
     transition: var(--transition);
@@ -794,6 +795,7 @@ body[data-p1vid-open="true"] #p1vidWatch{
 .table_resp .t_r_head .t_slot{
     width: 50%;
     margin-bottom: 20px;
+    height: fit-content;
 }
 
 .table_resp .t_row:nth-of-type(2n){
@@ -830,6 +832,8 @@ body[data-p1vid-open="true"] #p1vidWatch{
     transition: var(--transition);
     top: 0;
     right: -100vw;
+
+    box-shadow:  -12px 0px 11px -5px  rgba(255,255,255,0.2);
 }
 
 .t_row_respbtn > span{

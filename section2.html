@@ -3,223 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>NIS | AI Forum</title>
+    <link rel="icon" type="image/x-icon" href="media/Logo-compressed.png">
+    <script src="../script.js" defer></script>
+    <link rel="stylesheet" href="../style.css">
+    <!-- <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Great+Vibes&family=Permanent+Marker&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     </style>
 </head>
-<body class="s_body" id="body">
+<body class="s_body" id="body" data-lang="kz">
     <div id="caption">
         <div class="logo_area">
-            Logo
+            <img src="../media/Logo.png" alt="">
         </div>
         <nav>
-            <a href="index.html#page1">About</a>
-            <a href="index.html#page2">Schedule</a>
-            <a href="#">Speakers</a>
-            <a href="#">Registration</a>
+            <a href="index.html">Ақпарат</a>
+            <a href="schedule.html">Уақыт Кестесі</a>
+            <a href="index.html#footer">Орналасуы</a>
+            <a href="https://forms.office.com/r/hK4uuTYTkv" target="_blank">Тіркелу</a>
         </nav>
         <div class="menu_area">
             <div id="lang_switch">
-                <span>KZ</span>
-                <span>RU</span>
-                <span>ENG</span>
+                <a href="index.html">KZ</a>
+                <a href="ru/index.html">RU</a>
+                <a href="en/index.html">ENG</a>
             </div>
             <div id="menu_btn_area">
-                <ion-icon name="menu" id="menu_btn"></ion-icon>
+                <img src="media/ionicons/menu.svg" alt="" id="menu_btn" class="icon">
             </div>
         </div>
     </div>
     <div id="menu">
         <div id="menu_content">
             <nav>
-                <a href="index.html">About</a>
-                <a href="schedule.html">Schedule</a>
-                <a href="#page2">Galery</a>
+                <a href="index.html">Негізгі Ақпарат</a>
+                <a href="schedule.html">Уақыт Кестесі</a>
+                <a href="#page2">Gallery</a>
+                <div id="menu_lang_switch">
+                    <a href="index.html">KZ</a>
+                    <a href="ru/index.html">RU</a>
+                    <a href="en/index.html">ENG</a>
+                </div>
             </nav>
         </div>
     </div>
     <div class="s_title">
-        <p>Section 2</p>
-        <p>AI in action: tools and technologies</p>
+        <p>Бөлім 2</p>
+        <p>Іс-әрекеттегі жасанды интеллект: құралдар мен технологиялар</p>
     </div>
-    <div class="table">
+    <div class="table" data-table-to-load="table_section_2_kz">
         <div class="t_row t_r_head">
             <div class="t_slot">
-                Time
+                Уақыт 
             </div>
             <div class="t_slot">
-                Topic
+                Тақырып 
             </div>
             <div class="t_slot">
-                Speakers
+                Спикерлер
             </div>
             <div class="t_slot">
-                Description
-            </div>
-        </div>
-        <div class="t_row">
-            <div class="t_slot">
-                13:00 - 13:50 
-            </div>
-            <div class="t_slot">
-                Creating an AI assistant for a school
-            </div>
-            <div class="t_slot">
-                Жуандық Сұлтан
-            </div>
-            <div class="t_slot">
-                How to develop a virtual assistant for the educational process, examples of bots and voice assistants
-            </div>
-        </div>
-        <div class="t_row">
-            <div class="t_slot">
-                14:00 - 14:50 
-            </div>
-            <div class="t_slot">
-                Neural networks for content generation and data visualization
-            </div>
-            <div class="t_slot">
-                Бекбутаева Айдана 
-                <br>
-                Абишева Айжан 
-            </div>
-            <div class="t_slot">
-                Demonstration of modern AI tools for image processing, text and interactive visualization creation
-            </div>
-        </div>
-        <div class="t_row">
-            <div class="t_slot">
-                15:00-15:50 
-            </div>
-            <div class="t_slot">
-                Programming with AI: a practical master class
-            </div>
-            <div class="t_slot">
-                Өтеу Қуаныш 
-            </div>
-            <div class="t_slot">
-                Learning to use AI libraries, creating simple programs and machine learning models
-            </div>
-        </div>
-        <div class="t_row">
-            <div class="t_slot">
-                15:50 - 16:00 
-            </div>
-            <div class="t_slot">
-                Digital test for pedagogy: conditions in the most modern schools
-            </div>
-            <div class="t_slot">
-                Кенжегалиева Б.С. 
-                <br>
-                Нурманова М.К. 
-                <br>
-                Нұрмағамбет Д.М. 
-            </div>
-            <div class="t_slot">
-                Digitalization of education and planning the active introduction of digital technologies in modern schools that allow improving the quality of Education , adapting educational processes to the individual needs of students.
+                Сипаттамасы
             </div>
         </div>
     </div>
-    <div class="table table_resp">
+    <div class="table table_resp" data-table-to-load="table_section_2_kz">
         <div class="t_row t_r_head">
             <div class="t_slot">
-                Time
+                Уақыт /
             </div>
             <div class="t_slot">
-                Topic
+                Тақырып /
             </div>
             <div class="t_slot">
-                Speakers
+                Спикерлер
             </div>
             <div class="t_slot">
-                Description
-            </div>
-        </div>
-        <div class="t_row">
-            <div class="t_slot">
-                13:00 - 13:50 
-            </div>
-            <div class="t_slot">
-                Creating an AI assistant for a school
-            </div>
-            <div class="t_hid_row" data-hidrow-open="false">
-                <div class="t_slot">
-                    Жуандық Сұлтан
-                </div>
-                <div class="t_slot">
-                    How to develop a virtual assistant for the educational process, examples of bots and voice assistants
-                </div>
-            </div>
-            <div class="t_row_respbtn">
-                <span><</span>
-            </div>
-        </div>
-        <div class="t_row">
-            <div class="t_slot">
-                14:00 - 14:50 
-            </div>
-            <div class="t_slot">
-                Neural networks for content generation and data visualization
-            </div>
-            <div class="t_hid_row" data-hidrow-open="false">
-                <div class="t_slot">
-                    Бекбутаева Айдана 
-                    <br>
-                    Абишева Айжан 
-                </div>
-                <div class="t_slot">
-                    Demonstration of modern AI tools for image processing, text and interactive visualization creation
-                </div>
-            </div>
-            <div class="t_row_respbtn">
-                <span><</span>
-            </div>
-        </div>
-        <div class="t_row">
-            <div class="t_slot">
-                15:00-15:50 
-            </div>
-            <div class="t_slot">
-                Programming with AI: a practical master class
-            </div>
-            <div class="t_hid_row" data-hidrow-open="false">
-                <div class="t_slot">
-                    Өтеу Қуаныш 
-                </div>
-                <div class="t_slot">
-                    Learning to use AI libraries, creating simple programs and machine learning models
-                </div>
-            </div>
-            <div class="t_row_respbtn">
-                <span><</span>
-            </div>
-        </div>
-        <div class="t_row">
-            <div class="t_slot">
-                15:50 - 16:00 
-            </div>
-            <div class="t_slot">
-                Digital test for pedagogy: conditions in the most modern schools
-            </div>
-            <div class="t_hid_row" data-hidrow-open="false">
-                <div class="t_slot">
-                    Кенжегалиева Б.С. 
-                    <br>
-                    Нурманова М.К. 
-                    <br>
-                    Нұрмағамбет Д.М. 
-                </div>
-                <div class="t_slot">
-                    Digitalization of education and planning the active introduction of digital technologies in modern schools that allow improving the quality of Education , adapting educational processes to the individual needs of students.
-                </div>
-            </div>
-            <div class="t_row_respbtn">
-                <span><</span>
+                Сипаттамасы
             </div>
         </div>
     </div>

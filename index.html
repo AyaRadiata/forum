@@ -3,67 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NIS | AI Forum</title>
+    <link rel="icon" type="image/x-icon" href="media/Logo-compressed.png">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../script.js" defer></script>
+    <!-- <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Great+Vibes&family=Permanent+Marker&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     </style>
 </head>
-<body id="body" data-lang="eng" data-p1vid-open="false">
+<body id="body" data-lang="kz" data-p1vid-open="false">
     <div id="caption">
         <div class="logo_area">
-            Logo
+            <img src="media/Logo.png" alt="">
         </div>
         <nav>
-            <a href="#page1">About</a>
-            <a href="#page2">Schedule</a>
-            <a href="#">Speakers</a>
-            <a href="#">Registration</a>
+            <a href="#page1">Ақпарат</a>
+            <a href="#page2">Уақыт Кестесі</a>
+            <a href="#footer">Орналасуы</a>
+            <a href="https://mailnisedu-my.sharepoint.com/:f:/g/personal/niyatbay_y_fmalm_nis_edu_kz/EmLK6C-5T4JCp0z2mwZd90sBiGvM3FJn5G9UV-9MLhcDHw?e=hInPW7" target="_blank">Сертификаттар</a>
         </nav>
         <div class="menu_area">
             <div id="lang_switch">
-                <span>KZ</span>
-                <span>RU</span>
-                <span>ENG</span>
+                <a href="index.html">KZ</a>
+                <a href="ru/index.html">RU</a>
+                <a href="en/index.html">ENG</a>
             </div>
             <div id="menu_btn_area">
-                <ion-icon name="menu" id="menu_btn"></ion-icon>
+                <img src="media/ionicons/menu.svg" alt="" id="menu_btn" class="icon">
+                <!-- <ion-icon name="menu" id="menu_btn"></ion-icon> -->
             </div>
         </div>
     </div>
     <div id="menu">
         <div id="menu_content">
             <nav>
-                <a href="index.html">About</a>
-                <a href="schedule.html">Schedule</a>
-                <a href="#page2">Galery</a>
+                <a href="index.html">Негізгі Ақпарат</a>
+                <a href="schedule.html">Уақыт Кестесі</a>
+                <a >Галерея</a>
+                <div id="menu_lang_switch">
+                    <a href="index.html">KZ</a>
+                    <a href="ru/index.html">RU</a>
+                    <a href="en/index.html">ENG</a>
+                </div>
             </nav>
         </div>
     </div>
     <div id="p1vidWatch">
-        <div id="p1vidClose"><ion-icon name="close-circle"></ion-icon></div>
+        <div id="p1vidClose"><img src="../media/ionicons/close-circle.svg" alt="" class="icon"></div>
         <video src="media/vid.mp4" controls></video>
     </div>
     <div id="header" class="page">
         <div id="header_content">
             <div class="left-f-block">
                 <div id="header_title">
-                    Developing <span>AI skills:</span> <br> preparing students for the <span>professions</span> of the <span>future</span>
+                    <!-- Developing <span>AI skills:</span> <br> preparing students for the <span>professions</span> of the <span>future</span> -->
+                    ЖИ-мен жұмыс істеу <span>дағдыларын дамыту</span>: оқушыларды <span>болашақ</span> мамандықтарына дайындау
                 </div>
                 <div class="header_subtitle">
-                    International Conference
+                    Халықаралық Конференция
                 </div>
             </div>
             <div class="right-f-block">
                 <div id="header_time" class="lbb">
                     <div class="time_title">
-                        19 April
+                        19 сәуір
                     </div>
                     <div class="time_desc">
-                        Don`t skip the day of your life
+                        Осы Күнге келіңіз!
                     </div>
                     <div id="time">
                         00 : 00 : 00 : 00
@@ -77,8 +85,8 @@
             
         </div>
         <div id="p1_title_text_box">
-            <span>Learn More About AI</span>
-            <span>With Professional Speakers</span>
+            <span>Кәсіби Спикерлермен</span>
+            <span>AI Туралы көбірек біліңіз</span>
         </div>
         <div id="p1_c_wrapper">
             <div class="p1_kw">Welcome</div>
@@ -88,437 +96,92 @@
             <div class="p1_kw">Development</div>
         </div>
         <div id="p1_video_box">
+            <div id="resp_p1_vc"></div>
             <video id="p1Vid" src="media/vid.mp4" autoplay loop muted></video>
         </div>
         <div class="p1_dec">
             <div class="p1dec_row p1dec_ur">
                 <div class="p1dec_box">
-                    <div><ion-icon name="albums"></ion-icon>20+ Topics</div>
-                    <span>Hear about AI and its development through different topics</span>
+                    <div><img src="media/ionicons/albums.svg" alt="" class="icon">20+ Тақырыптар</div>
+                    <span>Жасанды интеллект және оның дамуы туралы әртүрлі тақырыптар арқылы тыңдаңыз</span>
                 </div>
                 <div class="p1dec_box">
-                    <div><ion-icon name="accessibility"></ion-icon> 10+ Speakers</div>
-                    <span>Listen to specialists </span>
+                    <div><img src="media/ionicons/accessibility.svg" alt="" class="icon"> 10+ Спикер</div>
+                    <span>Мамандарды тыңдаңыз</span>
                 </div>
             </div>
             <div class="p1dec_row p1dec_lr">
                 <div class="p1dec_box" style="width: 100%;">
-                    <div><ion-icon name="analytics"></ion-icon>Memorizable experience</div>
-                    <span>Participate in the forum that you will definately remember</span> 
+                    <div><img src="media/ionicons/analytics.svg" alt="" class="icon">Есте қаларлық тәжірибе</div>
+                    <span>Сіз міндетті түрде есте қаларлық форумға қатысыңыз</span> 
                 </div>
             </div>
+        </div>
+        <div class="p1_info_text">
+            <div class="p1_info_row"><span>NIS AI Конференциясы - Назарбаев Зияткерлік Мектебінде өтетін форум. Әр түрлі спикерлер жасанды интеллект технологиялары және олардың біздің өмірімізге әсері туралы әртүрлі тақырыптарды талқылайды. Бұл күнді өткізіп алмаңыз!</span></div>
+            <div class="p1_info_row"><span>Конференцияда "ЖИ-нің біздің психологиямызға әсері", "ЖИ біздің өмірімізде және оның болашағы", "жасанды интеллект қалай жасалады" және т.б. сияқты тақырыптар талқыланады. Форумға келіп, түрлі спикерлерді тыңдаңыз. Жасанды интеллектті талқылаңыз. Сіз осы күнді ұмытпайсыз!</span></div>
         </div>
     </div>
     <div class="page" id="page2">
         <div class="p2_title">
-            <span>Events</span> Schedule
+            <span>Уақыт</span> Кестесі
         </div>
-        <div class="table">
+        <div class="table" data-table-to-load="table_main_kz">
             <div class="t_row t_r_head">
                 <div class="t_slot">
-                    Time
+                    Уақыт
                 </div>
                 <div class="t_slot">
-                    Event
+                    Іс-шара
                 </div>
                 <div class="t_slot">
-                    Description
+                    Cипаттамасы
                 </div>
                 <div class="t_slot">
-                    Place
-                </div>
-            </div>
-            <div class="t_row">
-                <div class="t_slot">
-                    10:00 - 10:30
-                </div>
-                <div class="t_slot">
-                    First Opening
-                </div>
-                <div class="t_slot">
-                    Welcome speech from the organizers, congratulations from the school management and invited guests.
-                </div>
-                <div class="t_slot">
-                    Assembly Hall
-                </div>
-            </div>
-            <div class="t_row">
-                <div class="t_slot">
-                    10:30 - 12:00
-                </div>
-                <div class="t_slot">
-                    The plenary session
-                </div>
-                <div class="t_slot">
-                    Presentations by invited experts on key issues.
-                </div>
-                <div class="t_slot">
-                    Assembly Hall
-                </div>
-            </div>
-            <div class="t_row">
-                <div class="t_slot">
-                    10:30 - 10:50 
-                </div>
-                <div class="t_slot">
-                    Report 1: "Artificial intelligence in education: global trends"
-                </div>
-                <div class="t_slot">
-                    Speaker: an invited expert (for example, a representative of a university or an IT company). 
-                    Pak Alexander- Candidate of Sciences, Associate Professor of KBTU
-                </div>
-                <div class="t_slot">
-                    Assembly Hall
-                </div>
-            </div>
-            <div class="t_row">
-                <div class="t_slot">
-                    10:50 - 11:30 
-                </div>
-                <div class="t_slot">
-                    Panel discussion "How is AI changing the labor market and what skills do graduates need?"
-                </div>
-                <div class="t_slot">
-                    Speakers: Толкын Нурушева <br> Томирис 
-                </div>
-                <div class="t_slot">
-                    Assembly Hall
-                </div>
-            </div>
-            <div class="t_row">
-                <div class="t_slot">
-                    12:00 - 13:00 
-                </div>
-                <div class="t_slot">
-                    Lunch break
-                </div>
-                <div class="t_slot">
-                    The opportunity to network and discuss what you've heard.
-                </div>
-                <div class="t_slot">
-                    Canteen
-                </div>
-            </div>
-            <div class="t_row">
-                <div class="t_slot">
-                    13:00 - 16:00
-                </div>
-                <div class="t_slot">
-                    <a href="section1.html">Section 1</a> <br>
-                    Artificial intelligence in learning: new horizons
-                </div>
-                <div class="t_slot">
-                    Analysis of cases of using AI in mathematics, physics and chemistry. Demonstration of practical examples.
-                </div>
-                <div class="t_slot">
-                    Assembly Hall
-                </div>
-            </div>
-            <div class="t_row">
-                <div class="t_slot">
-                    13:00 - 16:00
-                </div>
-                <div class="t_slot">
-                    <a href="section2.html">Section 2</a> <br>
-                    AI in action: tools and technologies
-                </div>
-                <div class="t_slot">
-                    Participants will try to create an AI assistant, work with neural networks to generate content, and program using AI.
-                </div>
-                <div class="t_slot">
-                    Abay Hall
-                </div>
-            </div>
-            <div class="t_row">
-                <div class="t_slot">
-                    13:00 - 16:00
-                </div>
-                <div class="t_slot">
-                    <a href="section3.html">Section 3</a> <br>
-                    Psychology, Parents, and AI: Challenges and Opportunities
-                </div>
-                <div class="t_slot">
-                    Discussion of the psychological aspects of using AI in education, risks and benefits for children.
-                </div>
-                <div class="t_slot">
-                    Library
-                </div>
-            </div>
-            <div class="t_row">
-                <div class="t_slot">
-                    13:00 - 16:00
-                </div>
-                <div class="t_slot">
-                    <a href="section4.html">Section 4</a> <br>
-                    Artificial intelligence and the future of society
-                </div>
-                <div class="t_slot">
-                    Analysis of the prospects of professions, ethical aspects and digital transformation of society.
-                </div>
-                <div class="t_slot">
-                    room 123
-                </div>
-            </div>
-            <div class="t_row">
-                <div class="t_slot">
-                    13:00 - 16:00
-                </div>
-                <div class="t_slot">
-                    <a href="section5.html">Section 5</a> <br>
-                    STEM and Robotics: innovative student projects
-                </div>
-                <div class="t_slot">
-                    
-                </div>
-                <div class="t_slot">
-
-                </div>
-            </div>
-            <div class="t_row">
-                <div class="t_slot">
-                    16:00 - 16:30
-                </div>
-                <div class="t_slot">
-                    Closing of the conference and summing up the results
-                </div>
-                <div class="t_slot">
-                    Summaries from moderators, conclusions based on the results of breakout sessions, awarding of participants.
-                </div>
-                <div class="t_slot">
-                    Assembly Hall
+                    Орын
                 </div>
             </div>
         </div>
-        <div class="table table_resp">
+        <div class="table table_resp" data-table-to-load="table_main_kz">
             <div class="t_row t_r_head">
-                <div class="t_slot">
-                    Time /
+                <div class="t_slot">    
+                    Уақыт /
                 </div>
                 <div class="t_slot">
-                    Event /
+                    Іс-шара /
                 </div>
                 <div class="t_slot">
-                    Description
+                    Cипаттамасы
                 </div>
                 <div class="t_slot">
-                    Place
+                    Орын
                 </div>
             </div>
-            <div class="t_row">
-                <div class="t_slot">
-                    10:00 - 10:30
-                </div>
-                <div class="t_slot">
-                    First Opening
-                </div>
-                <div class="t_hid_row" data-hidrow-open="false">
-                    <div class="t_slot">
-                        Welcome speech from the organizers, congratulations from the school management and invited guests.
-                    </div>
-                    <div class="t_slot">
-                        Assembly Hall
-                    </div>
-                </div>
-                <div class="t_row_respbtn">
-                    <span><</span>
-                </div>
+        </div>
+    </div>
+    <div class="page" id="page3">
+        <span>Форум <b>Аяқталды</b>. Міне <b>Сертификаттар</b>!</span> 
+        <a href="https://mailnisedu-my.sharepoint.com/:f:/g/personal/niyatbay_y_fmalm_nis_edu_kz/EmLK6C-5T4JCp0z2mwZd90sBiGvM3FJn5G9UV-9MLhcDHw?e=hInPW7" class="" target="_blank">Қарап Шығу</a>
+    </div>
+    <div id="footer">
+        <div class="foo_column">
+            <img src="media/Logo.png" alt="">
+            <span>
+                NIS AI Конференциясы - Назарбаев Зияткерлік Мектебінде өтетін форум. Әр түрлі спикерлер жасанды интеллект технологиялары және олардың біздің өмірімізге әсері туралы әртүрлі тақырыптарды талқылайды. Бұл күнді өткізіп алмаңыз!
+            </span>
+        </div>
+        <div class="foo_column">
+            <div id="online_map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1728.9635608602598!2d76.95143262592573!3d43.21455397620815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836f12b31a2867%3A0x423cbfe3e36c00c4!2z0J3QsNC30LDRgNCx0LDQtdCyINCY0L3RgtC10LvQu9C10LrRgtGD0LDQu9GM0L3QsNGPINGI0LrQvtC70LAg0YTQuNC30LjQutC-LdC80LDRgtC10LzQsNGC0LjRh9C10YHQutC-0LPQviDQvdCw0L_RgNCw0LLQu9C10L3QuNGP!5e0!3m2!1sru!2skz!4v1743700589297!5m2!1sru!2skz" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="t_row">
-                <div class="t_slot">
-                    10:30 - 12:00
-                </div>
-                <div class="t_slot">
-                    The plenary session
-                </div>
-                <div class="t_hid_row">
-                    <div class="t_slot">
-                        Presentations by invited experts on key issues.
-                    </div>
-                    <div class="t_slot">
-                        Assembly Hall
-                    </div>
-                </div>
-                <div class="t_row_respbtn">
-                    <span><</span>
-                </div>
-            </div>
-            <div class="t_row">
-                <div class="t_slot">
-                    10:30 - 10:50 
-                </div>
-                <div class="t_slot">
-                    Report 1: "Artificial intelligence in education: global trends"
-                </div>
-                <div class="t_hid_row">
-                    <div class="t_slot">
-                        Speaker: an invited expert (for example, a representative of a university or an IT company). 
-                        Pak Alexander- Candidate of Sciences, Associate Professor of KBTU
-                    </div>
-                    <div class="t_slot">
-                        Assembly Hall
-                    </div>
-                </div>
-                <div class="t_row_respbtn">
-                    <span><</span>
-                </div>
-            </div>
-            <div class="t_row">
-                <div class="t_slot">
-                    10:50 - 11:30 
-                </div>
-                <div class="t_slot">
-                    Panel discussion "How is AI changing the labor market and what skills do graduates need?"
-                </div>
-                <div class="t_hid_row">
-                    <div class="t_slot">
-                        Speakers: Толкын Нурушева <br> Томирис 
-                    </div>
-                    <div class="t_slot">
-                        Assembly Hall
-                    </div>
-                </div>
-                <div class="t_row_respbtn">
-                    <span><</span>
-                </div>
-            </div>
-            <div class="t_row">
-                <div class="t_slot">
-                    12:00 - 13:00 
-                </div>
-                <div class="t_slot">
-                    Lunch break
-                </div>
-                <div class="t_hid_row">
-                    <div class="t_slot">
-                        The opportunity to network and discuss what you've heard.
-                    </div>
-                    <div class="t_slot">
-                        Canteen
-                    </div>
-                </div>
-                <div class="t_row_respbtn">
-                    <span><</span>
-                </div>
-            </div>
-            <div class="t_row">
-                <div class="t_slot">
-                    13:00 - 16:00
-                </div>
-                <div class="t_slot">
-                    <a href="section1.html">Section 1</a> <br>
-                    Artificial intelligence in learning: new horizons
-                </div>
-                <div class="t_hid_row">
-                    <div class="t_slot">
-                        Analysis of cases of using AI in mathematics, physics and chemistry. Demonstration of practical examples.
-                    </div>
-                    <div class="t_slot">
-                        Assembly Hall
-                    </div>
-                </div>
-                <div class="t_row_respbtn">
-                    <span><</span>
-                </div>
-            </div>
-            <div class="t_row">
-                <div class="t_slot">
-                    13:00 - 16:00
-                </div>
-                <div class="t_slot">
-                    <a href="section2.html">Section 2</a> <br>
-                    AI in action: tools and technologies
-                </div>
-                <div class="t_hid_row">
-                    <div class="t_slot">
-                        Participants will try to create an AI assistant, work with neural networks to generate content, and program using AI.
-                    </div>
-                    <div class="t_slot">
-                        Abay Hall
-                    </div>
-                </div>
-                <div class="t_row_respbtn">
-                    <span><</span>
-                </div>
-            </div>
-            <div class="t_row">
-                <div class="t_slot">
-                    13:00 - 16:00
-                </div>
-                <div class="t_slot">
-                    <a href="section3.html">Section 3</a> <br>
-                    Psychology, Parents, and AI: Challenges and Opportunities
-                </div>
-                <div class="t_hid_row">
-                    <div class="t_slot">
-                        Discussion of the psychological aspects of using AI in education, risks and benefits for children.
-                    </div>
-                    <div class="t_slot">
-                        Library
-                    </div>
-                </div>
-                <div class="t_row_respbtn">
-                    <span><</span>
-                </div>
-            </div>
-            <div class="t_row">
-                <div class="t_slot">
-                    13:00 - 16:00
-                </div>
-                <div class="t_slot">
-                    <a href="section4.html">Section 4</a> <br>
-                    Artificial intelligence and the future of society
-                </div>
-                <div class="t_hid_row">
-                    <div class="t_slot">
-                        Analysis of the prospects of professions, ethical aspects and digital transformation of society.
-                    </div>
-                    <div class="t_slot">
-                        room 123
-                    </div>
-                </div>
-                <div class="t_row_respbtn">
-                    <span><</span>
-                </div>
-            </div>
-            <div class="t_row">
-                <div class="t_slot">
-                    13:00 - 16:00
-                </div>
-                <div class="t_slot">
-                    <a href="section5.html">Section 5</a> <br>
-                    STEM and Robotics: innovative student projects
-                </div>
-                <div class="t_hid_row">
-                    <div class="t_slot">
-                    
-                    </div>
-                    <div class="t_slot">
-    
-                    </div>
-                </div>
-                <div class="t_row_respbtn">
-                    <span><</span>
-                </div>
-            </div>
-            <div class="t_row">
-                <div class="t_slot">
-                    16:00 - 16:30
-                </div>
-                <div class="t_slot">
-                    Closing of the conference and summing up the results
-                </div>
-                <div class="t_hid_row">
-                    <div class="t_slot">
-                        Summaries from moderators, conclusions based on the results of breakout sessions, awarding of participants.
-                    </div>
-                    <div class="t_slot">
-                        Assembly Hall
-                    </div>
-                </div>
-                <div class="t_row_respbtn">
-                    <span><</span>
-                </div>
-            </div>
+        </div>
+        <div class="foo_column">
+            <span>Меню</span>
+            <nav>
+                <a href="index.html">Ақпарат</a>
+                <a href="schedule.html">Уақыт Кестесі</a>
+                <div><a href="index.html">KZ</a><a href="ru/index.html">RU</a><a href="en/index.html">ENG</a></div>
+            </nav>
         </div>
     </div>
 </body>
